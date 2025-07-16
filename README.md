@@ -29,7 +29,7 @@ A warm, minimal landing page that captures the cozy calm of café culture throug
 
 ## 📸 Screenshots
 
-![Screenshot](./assets/preview.png)
+![Screenshot](./img/mockup.jpg)
 
 ---
 
