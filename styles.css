@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Offside", sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+
+}
+
+#navbar {
+
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+    padding: 20px 30px;
+
+    background-color: #fff;
+
+}
+
+#nav-right a {
+
+    margin-right: 24px;
+
+    font-size: 16px;
+    color: black;
+
+    text-decoration: none;
+
+}
+
+.bi-arrow-left {
+
+    font-size: 24px;
+
+}
+
+#left {
+
+    height: 100%;
+    width: 40%;
+
+    position: relative;
+
+}
+
+#left #text-center {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+#text-center h1 {
+
+    font-size: 124px;
+    color: #964f23;
+
+}
+
+#cafe {
+
+    position: absolute;
+    display: flex;
+    justify-content: center;
+
+    width: 45%;
+    height: 20%;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    z-index: -1;
+    bottom: 0%;
+
+    font-size: 200px;
+    letter-spacing: 50px;
+    /* color: #964f230e; */
+    color: rgba(255, 228, 196, 0.251);
+
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: bisque;
+}
+
+#cafe::-webkit-scrollbar {
+
+    display: none;
+
+}
+
+#text-center p {
+
+    opacity: 0.7;
+    font-size: 16px;
+    line-height: 180%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+#text-center a {
+
+    text-decoration: none;
+    color: black;
+    border-bottom: black solid 1px;
+    background-clip: content-box;
+
+}
+
+#right {
+
+    height: 100%;
+    width: 60%;
+
+}
+
+#right-top {
+
+    width: 100%;
+    height: 50%;
+
+    display: flex;
+
+}
+
+#right-bottom {
+
+    width: 100%;
+    height: 50%;
+
+    background-image: url(./img/01.webp);
+    background-size: cover;
+    background-position: center;
+
+}
+
+#right-top-left {
+
+    height: 100%;
+    width: 55%;
+
+    background-image: url(./img/03.webp);
+    background-size: cover;
+    background-position: center;
+
+}
+
+#right-top-right {
+
+    height: 100%;
+    width: 45%;
+
+    background-image: url(./img/02.webp);
+    background-size: cover;
+
+}
+
+.offside-regular {
+
+    font-family: "Offside", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+@media(max-width: 920px) {
+
+    #main {
+
+        flex-direction: column;
+
+    }
+
+    #main #left {
+
+        width: 100%;
+
+    }
+
+    #main #left #navbar {
+
+        width: 100%;
+
+    }
+
+    #text-center {
+
+        margin-top: 30px;
+
+    }
+
+    #left {
+        margin-bottom: 10px;
+    }
+
+    #main #right {
+        margin-top: 30px;
+        width: 100%;
+    }
+
+}
